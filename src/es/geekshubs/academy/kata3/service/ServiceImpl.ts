@@ -6,7 +6,7 @@ import { Service } from "./Service";
 
 export class ServiceImpl implements Service {
  
-    constructor(public repository: Repository) {
+    constructor(public repository: Repository<Animal>) {
     }
 
     get(index:number) : Animal{
